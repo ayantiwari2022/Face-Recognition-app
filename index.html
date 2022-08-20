@@ -1,7 +1,7 @@
  
 <html>
   <head>
-    <title>Hand Gesture App</title>
+    <title>Emotion To Emoji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,25 +17,26 @@
   <div class="container">
   
     <center>
-      <h3 class="btn btn-info heading"> HAND GESTURE APP
+      <h3 class="btn btn-info heading"> EMOTION TO EMOJI APP
       <br>
-      <span>&#128077;</span>
-      <span>&#128078;</span>
-      <span>&#128074;</span>
-      <span>&#128075;</span>
-      <span>&#128076;</span>
-      <span>&#9994;</span>
+      <span>&#128522;</span>
+      <span>&#128512;</span>
+      <span>&#128532;</span>
+      <span>&#128546;</span>
+      <span>&#128545;</span>
+      <span>&#128548;</span>
       </h3>
 
       <br><br>
 
-      <p style="font-size: 22px;">Take your selfie of a Gesture to know about it's meaning
+      <p style="font-size: 22px;">Take your selfie to generate emoji
       	<br>
-        <b>On the following gestures the model is trained - </b>
+        <b style="color: yellow">Are you Happy?</b>
         <br>
-        <span>&#128076;</span>
-        <span>&#128077;</span>
-        <span>&#128078;</span>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
       </p>
       <div class="col-md-4 col-sm-12 col-xs-12">
 	      <label>Webcam View - </label>
@@ -45,9 +46,13 @@
         <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12">
-      <label>Prediction - </label>
+      <label>Prediction 1 - </label>
       <p class="emotion_name" id="result_emotion_name"></p>
       <p class="emoji" id="update_emoji"></p>
+
+      <label>Prediction 2 - </label>
+      <p class="emotion_name" id="result_emotion_name2"></p>
+      <p class="emoji" id="update_emoji2"></p>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12">
 	      <label>Snapshot - </label>
